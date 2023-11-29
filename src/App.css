@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 75px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form div span{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    /* justify-content: space-between; */
+    margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form div span label{
+    width: 15%;
+    /* margin-right: 50px; */
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.form div span input{
+    border: 2px solid black;
+    outline: none;
+    padding: 2.5px 10px;
+    font-size: 20px;
+    width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modules{
+    width: 100%;
+}
+
+.modules h1{
+    font-size: 25px;
+}
+
+.modules section{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    /* justify-content: space-between; */
+    margin-bottom: 30px;
+}
+
+.modules section label{
+    width: 45%;
+    /* margin-right: 50px; */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modules section input{
+    border: 2px solid black;
+    outline: none;
+    padding: 2.5px 10px;
+    font-size: 20px;
+    width: 30%;
+}
+
+.button{
+    background-color: blue;
+    width: 15%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    margin: auto;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+.button:hover{
+    background-color: white;
+    color: blue;
 }
